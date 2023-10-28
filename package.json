@@ -7,6 +7,7 @@
     "node":"15.x"
   },
   "scripts": {
+    "install": "npm install && pip -r requirements.txt",
     "start:node": "nodemon index",
     "start:flask": "python app.py",
     "start:both": "concurrently \"npm run start:node\" \"npm run start:flask\""
