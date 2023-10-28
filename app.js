@@ -21,6 +21,7 @@ const authRouter = require("./routes/authRoutes");
 const userRouter = require("./routes/userRoutes");
 const predictionRoute = require("./routes/flaskRoute");
 const medicalChatRoutes = require("./routes/medicalchatRoute");
+const index = require("./routes/index");
 
 
 
@@ -51,6 +52,7 @@ app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/predict", predictionRoute);
 app.use("/api/v1/medical", medicalChatRoutes);
+app.use("/", index);
 
 
 
