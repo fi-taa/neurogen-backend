@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node":"15.x"
+  },
   "scripts": {
-    "start:node": "nodemon app",
+    "start:node": "nodemon index",
     "start:flask": "python app.py",
     "start:both": "concurrently \"npm run start:node\" \"npm run start:flask\""
   },
